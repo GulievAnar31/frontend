@@ -1,0 +1,309 @@
+.user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  height: 100vh;
+}
+
+.user-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.user-header h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.user-header p {
+  color: #666;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+
+.logout-button:hover {
+  background-color: #e60000;
+}
+
+.users-list {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.users-list h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.users-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.users-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+.users-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* src/components/User.css */
+.not-logged-in-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  text-align: center;
+}
+
+.not-logged-in-container h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-button {
+  padding: 12px 24px;
+  background-color: #8ab6f7;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #6a98e3;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  background-color: #8ab6f7;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  /* Цвет для отключенных кнопок */
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #6a98e3;
+}
+
+.add-user-form {
+  width: 100%;
+  max-width: 500px;
+  /* Ограничиваем ширину формы */
+  margin: 20px auto;
+  /* Центрируем форму */
+  padding: 20px;
+  /* Внутренние отступы */
+  background: white;
+  /* Цвет фона */
+  border-radius: 8px;
+  /* Закругленные углы */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Тень */
+}
+
+.add-user-form h2 {
+  text-align: center;
+  /* Центрируем заголовок */
+  color: #333;
+  /* Цвет заголовка */
+  margin-bottom: 20px;
+  /* Отступ снизу */
+}
+
+.add-user-form input {
+  width: 100%;
+  /* Полная ширина */
+  padding: 10px;
+  /* Внутренние отступы */
+  margin-bottom: 15px;
+  /* Отступ между полями */
+  border: 1px solid #ddd;
+  /* Цвет границы */
+  border-radius: 5px;
+  /* Закругленные углы */
+  font-size: 16px;
+  /* Размер шрифта */
+  transition: border-color 0.3s;
+  /* Плавный переход при изменении границы */
+}
+
+.add-user-form input:focus {
+  border-color: #8ab6f7;
+  /* Цвет границы при фокусе */
+  outline: none;
+  /* Убираем стандартный контур */
+}
+
+.add-user-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #8ab6f7;
+  border: none;
+  /* Без границы */
+  border-radius: 5px;
+  /* Закругленные углы */
+  color: white;
+  /* Цвет текста */
+  font-size: 16px;
+  /* Размер шрифта */
+  cursor: pointer;
+  /* Указатель курсора */
+  transition: background-color 0.3s;
+  /* Плавный переход при наведении */
+}
+
+.add-user-form button:hover {
+  background-color: #6a98e3;
+  /* Цвет кнопки при наведении */
+}
+
+.error-message {
+  color: red;
+  /* Цвет текста ошибки */
+  text-align: center;
+  /* Центрируем текст */
+  margin-top: 10px;
+  /* Отступ сверху */
+}
+
+.users-list button {
+  padding: 5px 10px;
+  /* Внутренние отступы для кнопки */
+  margin-left: 10px;
+  /* Отступ слева для разделения от текста */
+  background-color: #4caf50;
+  /* Цвет фона кнопки */
+  border: none;
+  /* Без границы */
+  border-radius: 5px;
+  /* Закругленные углы */
+  color: white;
+  /* Цвет текста */
+  font-size: 14px;
+  /* Размер шрифта */
+  cursor: pointer;
+  /* Указатель курсора */
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+  /* Плавный переход для фона и трансформации */
+}
+
+.users-list button:hover {
+  background-color: #45a049;
+  /* Цвет фона при наведении */
+  transform: scale(1.05);
+  /* Увеличение размера кнопки при наведении */
+}
+
+.users-list button:focus {
+  outline: none;
+  /* Убираем стандартный контур при фокусировке */
+}
+
+.user-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  height: 100vh;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.user-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-header h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #e60000;
+}
+
+.user-info {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+}
+
+.user-info p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
